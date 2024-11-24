@@ -15,11 +15,15 @@ It uses **React** for the front-end and **Redux** for state management, making i
 
 ## Features
 
-- **Add User**: Easily add a new user with predefined fields (name, role, and status).
-- **Edit User**: Modify a user's name and role.
-- **Toggle Status**: Switch a user's status between **Active** and **Inactive** with visually distinct styles.
-- **Delete User**: Remove any user from the list.
-- **Responsive Design**: Optimized for both mobile and desktop views.
+- **Add User**: Easily add new users with default roles and statuses.
+- **Edit User**: Update the name and role of an existing user.
+- **Delete User**: Remove a user from the list.
+- **Toggle Status**: Switch a user's status between "Active" and "Inactive."
+- **Search Functionality**: Quickly search for users by their name to find specific individuals in the user list.
+- **Filter by Status**: Filter the user list to show only Active or Inactive users, making it easier to manage users based on their current status.
+- **Responsive UI**: The app is designed to be responsive, providing a smooth experience across devices (with additional improvements planned).
+- **User Management**: A clean, organized table to manage user data, including name, role, and status.
+
 
 ## Setup Instructions
 
