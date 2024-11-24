@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import UserForm from './components/UserForm';
+import UserTable from './components/UserTable';
+import RoleForm from './components/RoleForm'; // Import RoleForm
+import RoleTable from './components/RoleTable'; // Import RoleTable
+import DarkModeToggle from './components/DarkModeToggle';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen transition bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-500">
+      <DarkModeToggle />
+      <div className="container mx-auto p-4">
+        <h1 className="text-xl md:text-2xl font-bold mb-6">User & Role Management</h1>
+        
+        {/* Roles Section */}
+        <section className="mb-12">
+          <h2 className="text-xl font-semibold mb-4">Manage Roles</h2>
+          <RoleForm />
+          <RoleTable />
+        </section>
+
+        {/* Users Section */}
+        <section>
+          <h2 className="text-xl font-semibold mb-4">Manage Users</h2>
+          <UserForm />
+          <UserTable />
+        </section>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
