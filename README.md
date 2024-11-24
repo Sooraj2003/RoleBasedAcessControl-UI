@@ -33,7 +33,7 @@ To set up this project locally, follow these steps:
 git clone https://github.com/Sooraj2003/RoleBasedAcessControl-UI.git
 
 # Navigate into the project directory
-cd user-management-app
+cd RoleBasedAcessControl-UI
 
 # Install dependencies
 npm install
